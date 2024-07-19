@@ -12,7 +12,7 @@ mongoose.connect(process.env.MONGO).then( ()=> {
 
 const app=express();
 
-app.use(express.json());
+app.use(express.json());//by default we cant send any json file to the server thats why it is used 
 
 app.listen(3000,()=>{
     console.log("server is running on the port 3000");
